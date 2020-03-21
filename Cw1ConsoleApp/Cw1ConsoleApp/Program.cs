@@ -14,7 +14,7 @@ namespace Cw1ConsoleApp
             //var httpClient = new HttpClient();   //to jest to samo co HttpClient httpClient
             var client = new HttpClient();
             var result= await client.GetAsync(url);
-            result.StatusCode;
+            
             if (result.IsSuccessStatusCode)
             {
                 string htmlContent = await result.Content.ReadAsStringAsync();
